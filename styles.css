@@ -362,47 +362,396 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+
     .hero-content {
-        flex-direction: column;
-        text-align: center;
+        gap: 2rem;
     }
 
     .profile-image.circular {
         width: 250px;
         height: 250px;
     }
+}
+
+@media (max-width: 768px) {
+    /* Header and Navigation */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
 
     nav ul {
         flex-direction: column;
         align-items: center;
+        padding: 1rem;
         gap: 1rem;
+        background: var(--white);
+        box-shadow: var(--shadow);
     }
 
+    nav ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem 1rem;
+    }
+
+    /* Hero Section */
+    #hero {
+        padding-top: 8rem;
+        min-height: auto;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1.3rem;
+    }
+
+    .profile-image.circular {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Sections */
+    section {
+        padding: 3rem 0;
+    }
+
+    section h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Experience Section */
     .experience-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .experience-item {
+        padding: 1.2rem;
+    }
+
+    /* Skills Section */
+    .skills ul {
         grid-template-columns: 1fr;
     }
 
-    .unc-banner {
-        height: 3.5rem;
+    .skills li {
+        padding: 0.7rem 1rem;
     }
-    
+
+    /* Contact Section */
+    .contact-info {
+        padding: 1.5rem;
+    }
+
+    .contact-info p {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .contact-info i {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Typography */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Hero Section */
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1.1rem;
+    }
+
+    .profile-image.circular {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* Experience Section */
+    .experience-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .experience-item .position {
+        font-size: 0.9rem;
+    }
+
+    .experience-details li {
+        font-size: 0.9rem;
+    }
+
+    /* Contact Section */
+    .contact-info {
+        padding: 1rem;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1001;
+    background: var(--white);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}
+
+.menu-toggle i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
     nav ul {
-        height: 3.5rem;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+        z-index: 1000;
     }
-    
+
+    nav ul.active {
+        display: flex;
+    }
+
     nav ul li {
-        margin: 0 0.5rem;
+        margin: 1rem 0;
     }
-    
+
     nav ul li a {
-        font-size: 1rem;
-        padding: 0.3rem 0.6rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.2rem;
     }
-    
+
+    /* Hero Section */
     #hero {
-        padding-top: 10rem;
+        padding-top: 4rem;
+        min-height: auto;
     }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .profile-image.circular {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Sections */
+    section {
+        padding: 3rem 1rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Experience Section */
+    .experience-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .experience-item {
+        padding: 1.2rem;
+    }
+
+    .experience-item h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Skills Section */
+    .skills ul {
+        grid-template-columns: 1fr;
+    }
+
+    .skills li {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    /* Contact Section */
+    .contact-info {
+        padding: 1.5rem;
+    }
+
+    .contact-info p {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .contact-info i {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    /* Typography */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    /* Hero Section */
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1.1rem;
+    }
+
+    .profile-image.circular {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* Experience Section */
+    .experience-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .experience-item .position {
+        font-size: 0.9rem;
+    }
+
+    .experience-details li {
+        font-size: 0.9rem;
+    }
+
+    /* Contact Section */
+    .contact-info {
+        padding: 1rem;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Touch-friendly elements */
+@media (hover: none) {
+    .experience-item:hover {
+        transform: none;
+    }
+
+    .skills li:hover {
+        background: var(--light-blue);
+        color: var(--primary-color);
+    }
+
+    .contact-info a:hover {
+        color: var(--accent-color);
+    }
+}
+
+/* Prevent text size adjustment on mobile */
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Improve touch targets */
+a, button, .experience-item, .skills li {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+/* Prevent horizontal scrolling */
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Improve mobile scrolling */
+html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Better mobile viewport handling */
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+/* Improve mobile performance */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Better mobile form elements */
+input, textarea, select {
+    font-size: 16px; /* Prevents zoom on focus */
 }
 
 /* Start Section */

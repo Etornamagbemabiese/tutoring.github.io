@@ -185,4 +185,19 @@ startButton.addEventListener('click', () => {
         console.log('Starting journey...');
         // For example: window.location.href = 'your-link-here';
     }, 1000);
+});
+
+// Mobile Menu Toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+
+// Close mobile menu when clicking a link
+document.querySelectorAll('nav ul li a').forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('active');
+    });
 }); 
