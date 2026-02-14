@@ -65,3 +65,4 @@ npx http-server -p 8000
 - Make sure all file paths are correct
 - The site is optimized for performance and SEO
 
+
