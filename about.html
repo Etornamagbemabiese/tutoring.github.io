@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Etornam Agbemabiese's path through business, computer science, leadership, consulting, and entrepreneurship at UNC-Chapel Hill.">
     <title>About - Etornam Agbemabiese</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -24,16 +25,19 @@
                 <a href="about.html" class="nav-link active">About</a>
                 <a href="experience.html" class="nav-link">Experience</a>
                 <a href="education.html" class="nav-link">Education</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </div>
-            <div class="nav-toggle" id="nav-toggle">
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="nav-menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
+    <main>
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
@@ -57,17 +61,17 @@
                     </div>
                 </div>
             </div>
-            <div class="scroll-indicator">
+            <a class="scroll-indicator" href="#story" aria-label="Scroll to my story">
                 <div class="scroll-text">Scroll to explore more</div>
                 <div class="scroll-arrow">
                     <i class="fas fa-chevron-down"></i>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section class="about" id="story">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">My Story</h2>
@@ -76,16 +80,16 @@
             <div class="about-content">
                 <div class="about-text">
                     <div class="about-description">
-                        <p>Hi, I'm Etornam Agbemabiese, Class of 2027 at UNC-Chapel Hill pursuing a double major in Business Administration and Computer Science. My journey began in High Point, North Carolina, where I developed a passion for leadership and entrepreneurship from an early age. Growing up in a community that valued hard work and innovation, I quickly learned that success comes not just from individual achievement, but from lifting others up and creating opportunities for everyone around you.</p>
-                        
-                        <p>I thrive on exploring how innovative ideas and emerging technologies can create impactful solutions, drive efficiency, and unlock new opportunities across various industries. My experience includes Etornam's Green Clean, an eco-friendly cleaning and landscaping service that specialized in sustainable practices. Each venture has taught me valuable lessons about market research, customer relations, and the importance of building something that truly serves a need.</p>
-                        
-                        <p>I believe in the power of collaboration and enjoy working with diverse teams to tackle complex challenges. Whether it's leading the UNC African Students Association as Vice President, contributing to the Minority Business Student Alliance, or participating in prestigious programs like DaVita's Redwoods Leadership Summit, I'm always eager to learn and grow. These experiences have shaped my understanding of what it means to be a leader - not just someone who gives orders, but someone who listens, learns, and helps others reach their full potential.</p>
+                        <p>Hi, I'm Etornam Agbemabiese, a senior at UNC-Chapel Hill pursuing a double major in Business Administration and Computer Science with a minor in Data Science. My journey began in High Point, North Carolina, where I developed a passion for leadership and entrepreneurship from an early age. Growing up in a community that valued hard work and innovation, I quickly learned that success comes not just from individual achievement, but from lifting others up and creating opportunities for everyone around you.</p>
+
+                        <p>I thrive on exploring how innovative ideas and emerging technologies can create impactful solutions, drive efficiency, and unlock new opportunities across various industries. I've gained hands-on consulting experience through UNC Kenan-Flagler's STAR program, a social impact consulting project with a Cape Town social entrepreneur through UNC Kenan-Flagler and TSIBA Business School, and venture capital immersion through VCIC in Houston and Salt Lake City. Each experience has taught me valuable lessons about market research, stakeholder engagement, and the importance of building something that truly serves a need.</p>
+
+                        <p>I believe in the power of collaboration and enjoy working with diverse teams to tackle complex challenges. I'm currently an AI Strategy Intern at DaVita Kidney Care through the Redwoods Leadership Development Program, supporting stakeholder interviews and technology recommendations for the organization. Previously, I served as Vice President of both the UNC African Students Association and the Minority Business Student Alliance, and I've represented UNC internationally through the Yale Model African Union in Accra, Ghana. These experiences have shaped my understanding of what it means to be a leader - not just someone who gives orders, but someone who listens, learns, and helps others reach their full potential.</p>
                     </div>
                     
                 </div>
                 <div class="about-image">
-                    <img src="Headshot3.jpg" alt="Professional Headshot" class="section-img">
+                    <img src="Headshot1.jpg" alt="Professional Headshot" class="section-img">
                 </div>
             </div>
         </div>
@@ -153,7 +157,7 @@
                         
                         <p>I believe in giving back to the community that has supported me. Whether it's through tutoring, volunteering, or participating in community events, I try to make a positive impact wherever I can.</p>
                         
-                        <p>I'm also fascinated by the intersection of technology and business, and I spend time learning about emerging trends in fintech, edtech, and sustainable business practices.</p>
+                        <p>I'm also fascinated by the intersection of technology and business, and I spend time learning about emerging trends in fintech, edtech, and sustainable business practices - from visiting Fido's fintech operations in Accra to exploring how alternative credit models are expanding financial inclusion across Africa.</p>
                     </div>
                 </div>
                 <div class="about-image">
@@ -175,18 +179,22 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-text">
-                    <p>&copy; 2025 Etornam Agbemabiese. All rights reserved.</p>
+                    <p>&copy; 2026 Etornam Agbemabiese. All rights reserved.</p>
                 </div>
                 <div class="footer-links">
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
                     <a href="experience.html">Experience</a>
                     <a href="education.html">Education</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="gallery.html">Gallery</a>
                     <a href="contact.html">Contact</a>
                 </div>
             </div>

@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Etornam Agbemabiese's professional experience, leadership roles, consulting work, and community involvement.">
     <title>Experience - Etornam Agbemabiese</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -24,16 +25,19 @@
                 <a href="about.html" class="nav-link">About</a>
                 <a href="experience.html" class="nav-link active">Experience</a>
                 <a href="education.html" class="nav-link">Education</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </div>
-            <div class="nav-toggle" id="nav-toggle">
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="nav-menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
+    <main>
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
@@ -47,12 +51,12 @@
                         <span class="name-last">Experience</span>
                     </h1>
                     <div class="hero-description">
-                        <p>From founding startups to leading student organizations, I've built a diverse portfolio of experiences that showcase my passion for innovation, leadership, and making a positive impact.</p>
+                        <p>I've built a diverse portfolio of experiences that showcase my passion for innovation, leadership, and making a positive impact.</p>
                     </div>
                 </div>
                 <div class="hero-image">
                     <div class="image-container">
-                        <img src="Headshot1.jpg" alt="Professional Experience" class="profile-img">
+                        <img src="Headshot3.jpg" alt="Professional Experience" class="profile-img" style="object-position: center 34%;">
                         <div class="image-overlay"></div>
                     </div>
                 </div>
@@ -70,6 +74,74 @@
             <div class="experience-cards">
                 <!-- Current Position -->
                 <div class="experience-card featured" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3 class="card-title">DaVita Kidney Care</h3>
+                            <p class="card-position">AI Strategy Intern</p>
+                            <div class="card-meta">
+                                <span class="duration">June 2026 - August 2026</span>
+                                <span class="location">Denver, CO</span>
+                            </div>
+                            <div class="flip-hint">
+                                <i class="fas fa-hand-pointer"></i>
+                                <span>Tap to learn more</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3 class="card-title">AI Strategy Intern</h3>
+                            <p class="card-company">DaVita Kidney Care</p>
+                            <div class="card-description">
+                                <p>Selected for DaVita's competitive Redwoods internship program, gaining experience in data-driven strategy, analytics, and cross-functional problem-solving within a mission-driven healthcare organization.</p>
+                                <ul>
+                                    <li>Support an AI strategy initiative by conducting stakeholder interviews</li>
+                                    <li>Evaluate enterprise technology tools and identify high-impact use cases</li>
+                                    <li>Develop recommendations to improve efficiency and decision-making</li>
+                                    <li>Collaborate with leaders to translate business needs into technology solutions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UNC Kenan-Flagler Career Intern -->
+                <div class="experience-card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h3 class="card-title">UNC Kenan-Flagler Undergraduate Business Program</h3>
+                            <p class="card-position">Career Intern</p>
+                            <div class="card-meta">
+                                <span class="duration">May 2026 - Present</span>
+                                <span class="location">Chapel Hill, NC</span>
+                            </div>
+                            <div class="flip-hint">
+                                <i class="fas fa-hand-pointer"></i>
+                                <span>Tap to learn more</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3 class="card-title">Career Intern</h3>
+                            <p class="card-company">UNC Kenan-Flagler Undergraduate Business Program</p>
+                            <div class="card-description">
+                                <p>Selected as a UBP Career Intern with a special focus on consulting for the Career Development and Employer Relations team.</p>
+                                <ul>
+                                    <li>Support career programming and recruiting initiatives</li>
+                                    <li>Develop professional development resources for consulting recruitment</li>
+                                    <li>Collaborate with staff, employers, and fellow career interns</li>
+                                    <li>Coordinate events to strengthen student engagement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Financial Technology Intern -->
+                <div class="experience-card" onclick="flipCard(this)">
                     <div class="card-inner">
                         <div class="card-front">
                             <div class="card-icon">
@@ -294,7 +366,7 @@
                             <h3 class="card-title">UNC African Students Association</h3>
                             <p class="card-position">Vice President</p>
                             <div class="card-meta">
-                                <span class="duration">May 2025 - Present</span>
+                                <span class="duration">May 2025 - May 2026</span>
                                 <span class="location">Chapel Hill, NC</span>
                             </div>
                             <div class="flip-hint">
@@ -306,12 +378,12 @@
                             <h3 class="card-title">Vice President</h3>
                             <p class="card-company">UNC African Students Association</p>
                             <div class="card-description">
-                                <p>Lead executive board in designing cultural, educational, and networking events with strategic planning and budget management.</p>
+                                <p>Led the executive board in designing cultural, educational, and networking events with strategic planning and budget management, closing out my tenure with a sold-out Africa Night.</p>
                                 <ul>
-                                    <li>Lead executive board in event design and planning</li>
+                                    <li>Led executive board in event design and planning</li>
                                     <li>Strategic planning and budget management</li>
-                                    <li>Design cultural and educational programming</li>
-                                    <li>Build networking opportunities for members</li>
+                                    <li>Organized Africa Night, a sold-out celebration of African culture and storytelling</li>
+                                    <li>Built networking opportunities for members</li>
                                 </ul>
                             </div>
                         </div>
@@ -328,7 +400,7 @@
                             <h3 class="card-title">UNC Minority Business Student Alliance</h3>
                             <p class="card-position">Vice President</p>
                             <div class="card-meta">
-                                <span class="duration">May 2025 - Present</span>
+                                <span class="duration">May 2025 - May 2026</span>
                                 <span class="location">Chapel Hill, NC</span>
                             </div>
                             <div class="flip-hint">
@@ -477,7 +549,7 @@
                             <h3 class="card-title">VCIC Fellows Program</h3>
                             <p class="card-position">VCIC Fellow</p>
                             <div class="card-meta">
-                                <span class="duration">January 2026 - Present</span>
+                                <span class="duration">January 2026 - March 2026</span>
                                 <span class="location">UNC Kenan-Flagler</span>
                             </div>
                             <div class="flip-hint">
@@ -489,13 +561,12 @@
                             <h3 class="card-title">VCIC Fellow</h3>
                             <p class="card-company">VCIC Fellows Program - UNC Kenan-Flagler</p>
                             <div class="card-description">
-                                <p>Selected for the Regional Venture Capital Immersion course, providing opportunities to study venture capital and entrepreneurship through two stipend-supported trips to different entrepreneurial regions of the United States.</p>
+                                <p>Selected as a VCIC Fellow through a competitive application process, gaining hands-on exposure to venture capital through live pitch evaluations, due diligence simulations, and travel to entrepreneurial hubs in Houston and Salt Lake City.</p>
                                 <ul>
-                                    <li>Observe real VC partner meetings discussing startup investments</li>
-                                    <li>Learn from startup founders during due diligence sessions</li>
-                                    <li>Network with entrepreneurial students, founders, and investors</li>
-                                    <li>Study venture capital through practical, interactive experiences</li>
-                                    <li>Travel to different entrepreneurial regions with travel subsidies</li>
+                                    <li>Analyzed early-stage startups by assessing business models and market positioning</li>
+                                    <li>Observed real VC partner meetings and founder pitch sessions</li>
+                                    <li>Traveled to Houston and Salt Lake City for regional VC immersion</li>
+                                    <li>Strengthened understanding of investment decision-making and early-stage evaluation</li>
                                 </ul>
                             </div>
                         </div>
@@ -510,9 +581,9 @@
                                 <i class="fas fa-star"></i>
                             </div>
                             <h3 class="card-title">STAR Program</h3>
-                            <p class="card-position">STAR Student</p>
+                            <p class="card-position">STAR Program Consultant</p>
                             <div class="card-meta">
-                                <span class="duration">January 2026 - Present</span>
+                                <span class="duration">December 2025 - May 2026</span>
                                 <span class="location">UNC Kenan-Flagler</span>
                             </div>
                             <div class="flip-hint">
@@ -521,16 +592,15 @@
                             </div>
                         </div>
                         <div class="card-back">
-                            <h3 class="card-title">STAR Student</h3>
+                            <h3 class="card-title">STAR Program Consultant</h3>
                             <p class="card-company">STAR Program - UNC Kenan-Flagler</p>
                             <div class="card-description">
-                                <p>Selected for Student Teams Achieving Results (STAR), an experiential learning program that matches teams of MBA, MSM, and Undergraduate Business students with corporate partners and nonprofits to solve complex challenges.</p>
+                                <p>Selected for UNC Kenan-Flagler's competitive STAR consulting program, where student teams advise corporate partners on complex, real-world business challenges. Completed a semester-long engagement evaluating next-generation mixed-reality solutions for technical service operations.</p>
                                 <ul>
-                                    <li>Work on diverse teams to solve ambiguous business problems</li>
-                                    <li>Develop data-driven, innovative solutions for corporate partners</li>
-                                    <li>Deliver executive-level presentations with actionable recommendations</li>
-                                    <li>Advance professional skills in problem-solving and teamwork</li>
-                                    <li>Partner with regional, U.S. and global businesses</li>
+                                    <li>Conducted market and vendor research and gathered stakeholder insights</li>
+                                    <li>Developed qualitative and quantitative criteria to assess solutions</li>
+                                    <li>Assessed usability, technical fit, scalability, and implementation readiness</li>
+                                    <li>Presented the team's final strategy and recommendation to client leadership</li>
                                 </ul>
                             </div>
                         </div>
@@ -545,7 +615,7 @@
                                 <i class="fas fa-briefcase"></i>
                             </div>
                             <h3 class="card-title">Management Leadership for Tomorrow</h3>
-                            <p class="card-position">Career Prep Fellow</p>
+                            <p class="card-position">MLT Scholar</p>
                             <div class="card-meta">
                                 <span class="duration">November 2024 - Present</span>
                                 <span class="location">Remote</span>
@@ -556,7 +626,7 @@
                             </div>
                         </div>
                         <div class="card-back">
-                            <h3 class="card-title">Career Prep Fellow</h3>
+                            <h3 class="card-title">MLT Scholar</h3>
                             <p class="card-company">Management Leadership for Tomorrow</p>
                             <div class="card-description">
                                 <p>Engaging in comprehensive workshops focused on career navigation and leadership development.</p>
@@ -650,7 +720,7 @@
                             <h3 class="card-title">DaVita's Redwoods Leadership Development Program</h3>
                             <p class="card-position">Participant</p>
                             <div class="card-meta">
-                                <span class="duration">June 2025</span>
+                                <span class="duration">June 2026 - Present</span>
                                 <span class="location">Denver, CO</span>
                             </div>
                             <div class="flip-hint">
@@ -662,12 +732,12 @@
                             <h3 class="card-title">Participant</h3>
                             <p class="card-company">DaVita's Redwoods Leadership Development Program</p>
                             <div class="card-description">
-                                <p>Selected for prestigious leadership summit exploring healthcare and business leadership intersection.</p>
+                                <p>Selected for the prestigious Redwoods Leadership Development Program, pairing my AI Strategy Internship with mentorship, professional development, and exposure to leaders across the organization.</p>
                                 <ul>
-                                    <li>Selected for prestigious leadership summit</li>
-                                    <li>Explored healthcare and business leadership intersection</li>
-                                    <li>Participated in intensive leadership workshops</li>
-                                    <li>Networked with industry professionals</li>
+                                    <li>Selected for a competitive leadership development cohort</li>
+                                    <li>Explored the intersection of healthcare and business leadership</li>
+                                    <li>Participated in intensive leadership workshops and mentorship</li>
+                                    <li>Built lasting relationships with a talented, driven intern cohort</li>
                                 </ul>
                             </div>
                         </div>
@@ -678,18 +748,22 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-text">
-                    <p>&copy; 2025 Etornam Agbemabiese. All rights reserved.</p>
+                    <p>&copy; 2026 Etornam Agbemabiese. All rights reserved.</p>
                 </div>
                 <div class="footer-links">
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
                     <a href="experience.html">Experience</a>
                     <a href="education.html">Education</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="gallery.html">Gallery</a>
                     <a href="contact.html">Contact</a>
                 </div>
             </div>

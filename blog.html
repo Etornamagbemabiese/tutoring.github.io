@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog - Reflections on internships, venture capital, leadership, and global experiences from Etornam Agbemabiese.">
+    <title>Blog - Etornam Agbemabiese</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">
+                    <span class="logo-text">EA</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="education.html" class="nav-link">Education</a>
+                <a href="blog.html" class="nav-link active">Blog</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="nav-menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="greeting-text">Notes from the journey</span>
+                    </div>
+                    <h1 class="hero-name">
+                        <span class="name-first">The</span>
+                        <span class="name-last">Blog</span>
+                    </h1>
+                    <div class="hero-description">
+                        <p>Reflections on internships, venture capital, leadership, and experiences from Chapel Hill to Accra to Cape Town to Denver. These entries chronicle the lessons, people, and moments shaping my journey.</p>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="Headshot2.jpg" alt="Etornam Agbemabiese" class="profile-img" style="object-position: center 35%;">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">All Entries</h2>
+                <p class="section-subtitle">Filter by topic, or browse the full journey</p>
+            </div>
+
+            <div class="blog-filters">
+                <button class="filter-btn active" onclick="filterBlog('all', this)">All</button>
+                <button class="filter-btn" onclick="filterBlog('career', this)">Career</button>
+                <button class="filter-btn" onclick="filterBlog('leadership', this)">Leadership</button>
+                <button class="filter-btn" onclick="filterBlog('venture', this)">Venture Capital</button>
+                <button class="filter-btn" onclick="filterBlog('global', this)">Global</button>
+                <button class="filter-btn" onclick="filterBlog('milestones', this)">Milestones</button>
+                <button class="filter-btn" onclick="filterBlog('entrepreneurship', this)">Entrepreneurship</button>
+            </div>
+
+            <div class="blog-grid">
+
+                <!-- July 2026 — DaVita Week 7 -->
+                <article class="blog-card featured-post" data-category="career">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Career</span>
+                        <span class="blog-date">July 2026</span>
+                    </div>
+                    <h3 class="blog-title">Week 7 at DaVita: Reflections on Growth</h3>
+                    <p class="blog-excerpt">As I begin Week 7 of my internship at DaVita Kidney Care, I have been reflecting on how much I have learned and grown throughout the summer.</p>
+                    <div class="blog-full">
+                        <p>Over the past several weeks, I have gained hands-on experience supporting an AI strategy initiative, conducting stakeholder interviews, evaluating technology use cases, and translating business needs into practical recommendations. The experience has strengthened my ability to ask thoughtful questions, communicate clearly, and approach complex problems with greater confidence.</p>
+                        <p>The DaVita Redwoods Leadership Development Program has also played an important role in developing my leadership potential. Through mentorship, professional development opportunities, and exposure to leaders across the organization, I have gained a clearer understanding of the type of leader I hope to become.</p>
+                        <p>One of the best parts of the experience has been my cohort. I am grateful to be surrounded by such talented, driven, and supportive people, and I have truly enjoyed learning alongside them and building friendships throughout the summer.</p>
+                        <p>Outside of work, I have also loved exploring Denver and experiencing everything the city has to offer. I am grateful for the people, experiences, and lessons that have made this summer so meaningful, and I am excited to make the most of the remaining weeks.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7484722530944131072/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- June 2026 — DaVita cohort -->
+                <article class="blog-card" data-category="career">
+                    <div class="blog-card-top"><span class="blog-tag">Career</span><span class="blog-date">June 2026</span></div>
+                    <h3 class="blog-title">Starting the Summer with DaVita Redwoods</h3>
+                    <p class="blog-excerpt">Forty interns arrived at DaVita's Village in Denver to begin a ten-week summer of learning, relationships, and real-world impact.</p>
+                    <div class="blog-full"><p>I was excited to join the Redwoods Leadership Development Program cohort and get to work alongside such a talented group. The kickoff set the tone for a summer centered on growth, collaboration, and meaningful work.</p></div>
+                    <div class="blog-card-actions"><button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button><a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7473577890408779779/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a></div>
+                </article>
+
+                <!-- May 2026 — MBSA reflection -->
+                <article class="blog-card" data-category="leadership">
+                    <div class="blog-card-top"><span class="blog-tag">Leadership</span><span class="blog-date">May 2026</span></div>
+                    <h3 class="blog-title">Creating Spaces for Connection</h3>
+                    <p class="blog-excerpt">The Minority Business Student Alliance brought students, alumni, and professionals together through a networking event, the Black Innovators Conference, and an intimate closing dinner.</p>
+                    <div class="blog-full"><p>I was inspired by what the team built. Experiences like these show what becomes possible when people intentionally create spaces for mentorship, collaboration, honest conversation, and new relationships.</p></div>
+                    <div class="blog-card-actions"><button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button><a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7459689334451949568/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a></div>
+                </article>
+
+                <!-- May 2026 — Semester recap -->
+                <article class="blog-card" data-category="leadership">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Leadership</span>
+                        <span class="blog-date">May 2026</span>
+                    </div>
+                    <h3 class="blog-title">A Semester of Growth: STAR, Data Science &amp; Global Perspectives</h3>
+                    <p class="blog-excerpt">As the semester came to a close and I prepared to start my summer at DaVita's Redwoods Leadership Development Program, I reflected on how much I grew academically and professionally over the past few months at UNC.</p>
+                    <div class="blog-full">
+                        <p>This semester challenged me both technically and strategically through courses like STOR 320: Methods and Models of Data Science, where I strengthened my foundation in data analysis, modeling, regression, clustering, and algorithmic thinking, and COMP 211: Systems Fundamentals, which deepened my understanding of systems-level computing and problem-solving.</p>
+                        <p>One of the most impactful experiences of the semester was participating in BUSI 554H STAR (Student Teams Achieving Results) through the UNC Kenan-Flagler Undergraduate Business Program. Working in a consulting-style environment on real-world business challenges taught me how to navigate ambiguity, collaborate effectively on teams, and develop actionable, research-backed recommendations for clients. A huge thank you to our faculty advisor Mark McNeilly, our project lead Jessica McGregor, and my incredible STAR teammates for making the experience such a meaningful and rewarding one.</p>
+                        <p>Outside the classroom, I'm grateful for opportunities that expanded my perspective globally and professionally — from venture capital experiences through VCIC in Houston and Salt Lake City, to participating in the Yale Model African Union in Ghana, and completing a social impact consulting experience in Cape Town, South Africa through UNC Kenan-Flagler and TSIBA Business School.</p>
+                        <p>I'm also thankful to have finished the semester serving as Vice President of both the UNC African Students Association and the Minority Business Student Alliance. Grateful for everyone who contributed to such a meaningful semester.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7468285436751396864/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- May 2026 — Cape Town -->
+                <article class="blog-card" data-category="global">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Global</span>
+                        <span class="blog-date">May 2026</span>
+                    </div>
+                    <h3 class="blog-title">Lessons from Cape Town: Consulting with Heart</h3>
+                    <p class="blog-excerpt">I returned from an incredible experience in Cape Town, South Africa, through the partnership between UNC Kenan-Flagler and TSIBA Business School. This trip challenged me, inspired me, and reshaped the way I think about leadership, consulting, entrepreneurship, and human connection.</p>
+                    <div class="blog-full">
+                        <p>From the moment we arrived, the warmth and energy from the TSIBA students stood out immediately. Their compassion, hospitality, and sense of community reminded me how powerful intentional relationships and support systems can be.</p>
+                        <p>One of the most impactful parts of the trip was working on a consulting project with social entrepreneur Lungi Joe, who runs a ceramics business while mentoring children in her community through art and creativity. Visiting her business and meeting the children she supports was inspiring. This project taught me that entrepreneurship can be about much more than profit; it can serve as a vehicle for empowerment and long-term community impact.</p>
+                        <p>As consultants, our challenge was figuring out how to help her sustainably grow both the business and mentorship sides of her work. Through customer interviews, research, and testing ideas, I learned that good consulting is not about pushing your own solutions, but about listening deeply, understanding the root problem, and adapting based on evidence. Sometimes what a client initially wants may not be what best supports their long-term mission.</p>
+                        <p>Beyond the consulting work, our wilderness retreat in the mountains was another defining experience. Disconnecting from technology and spending intentional time reflecting and connecting with the TSIBA students reminded me of the importance of slowing down and investing in people.</p>
+                        <p>Most importantly, this experience showed me that leadership is not just about solving problems; it is about listening, building trust, and creating solutions that genuinely improve people's lives.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7465830591746297858/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- May 2026 — Institute for Responsible Citizenship -->
+                <article class="blog-card" data-category="leadership">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Leadership</span>
+                        <span class="blog-date">May 2026</span>
+                    </div>
+                    <h3 class="blog-title">The Power of Small Actions</h3>
+                    <p class="blog-excerpt">I had the opportunity to attend the All-Collegiate Meeting with the Durham Collegiate Institute through The Institute for Responsible Citizenship in Charlotte, alongside students from across the country.</p>
+                    <div class="blog-full">
+                        <p>What stood out to me most was how often we underestimate the impact of our actions in real time. Small decisions, conversations, and moments of belief in others can shape outcomes far beyond what we ever see.</p>
+                        <p>It also reminded me that growth is usually invisible. The pressure, identity questions, and uncertainty we deal with internally are far more common than they appear. Ultimately, clarity is not always the starting point. Progress often comes from simply taking the next intentional step, even without the full picture.</p>
+                        <p>Thank you to William A. Keyes IV, PhD, and the entire team at The Institute for Responsible Citizenship for organizing this event.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7455601986080604160/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- May 2026 — Africa Night -->
+                <article class="blog-card" data-category="leadership">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Leadership</span>
+                        <span class="blog-date">May 2026</span>
+                    </div>
+                    <h3 class="blog-title">Africa Night: A Sold-Out Finale</h3>
+                    <p class="blog-excerpt">Africa Night was a powerful way to close out my tenure as Vice President of the UNC African Students Association — a completely sold-out event celebrating African culture, storytelling, and community on campus.</p>
+                    <div class="blog-full">
+                        <p>Alongside Joseph Warioba, Betsy George, and Oluwole Omolafe, I had the privilege of helping organize the event. Seeing the energy in the room, the pride in the performances, and the way people connected to the culture we were showcasing made all the late nights and planning meetings worth it. I also had the chance to step on stage and act in the play, which gave me a full-circle perspective on what it means to build something that others can experience and feel connected to.</p>
+                        <p>As my final event as Vice President, Africa Night made me reflect on a few key lessons:</p>
+                        <ul>
+                            <li>Leadership is rarely about doing everything yourself, and almost always about trust — trusting your team to execute, trusting the process when things feel uncertain, and trusting that the vision will come together in the end.</li>
+                            <li>Impact is often measured in moments, not just outcomes. A sold-out venue is great, but what stood out more were the conversations, the pride, and the sense of belonging in the room.</li>
+                            <li>So much can be accomplished when people come together with a shared purpose and genuine care for what they're building.</li>
+                        </ul>
+                        <p>Grateful to everyone who made Africa Night possible and to the ASA community for an unforgettable year of growth and leadership.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7453431848237559808/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- March 2026 — Cape Town announcement -->
+                <article class="blog-card" data-category="global">
+                    <div class="blog-card-top"><span class="blog-tag">Global</span><span class="blog-date">March 2026</span></div>
+                    <h3 class="blog-title">Preparing to Lead Differently in Cape Town</h3>
+                    <p class="blog-excerpt">I was selected for UNC Kenan-Flagler's Global Immersion Elective, “Learning to Lead Differently to Make a Difference,” in Cape Town, South Africa.</p>
+                    <div class="blog-full"><p>The program promised a hands-on exploration of human-centered leadership, cross-cultural collaboration, and social entrepreneurship. I was especially excited to partner with TSIBA Business School students and learn from organizations working at the intersection of business and community impact.</p></div>
+                    <div class="blog-card-actions"><button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button><a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7434991068976140288/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a></div>
+                </article>
+
+                <!-- Apr 2026 — Fido -->
+                <article class="blog-card" data-category="global">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Global</span>
+                        <span class="blog-date">April 2026</span>
+                    </div>
+                    <h3 class="blog-title">Inside Fido: Fintech &amp; Financial Inclusion in Accra</h3>
+                    <p class="blog-excerpt">I had the opportunity to visit Fido in Accra, and it was one of the most insightful experiences I've had exploring the fintech space in Africa.</p>
+                    <div class="blog-full">
+                        <p>What stood out most to me was how Fido is rethinking access to credit. In markets where traditional systems like FICO Score don't fully apply, Fido is leveraging alternative data to build a more inclusive financial ecosystem. Their proprietary "Fido Score" is helping make the financially excluded visible and bankable.</p>
+                        <p>Beyond the product, I was equally impressed by the scale and impact: over 1 million customers across multiple African markets, strong partnerships with institutions like Access Bank and platforms like Uber, and a clear commitment to financial inclusion, innovation, and gender equity.</p>
+                        <p>On the technical side, learning about their infrastructure — from machine learning-driven credit models to scalable backend systems — showed how deeply technology is embedded in solving real financial challenges.</p>
+                        <p>But what I valued most was the conversation. Hearing directly from the team about career paths, the realities of building in emerging markets, and the importance of staying open-minded really stuck with me. One takeaway I'll carry forward: your career doesn't have to follow a straight line; what matters is continuously learning and being willing to explore new opportunities.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7447629479990050816/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- Apr 2026 — Yale Model African Union -->
+                <article class="blog-card" data-category="global">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Global</span>
+                        <span class="blog-date">April 2026</span>
+                    </div>
+                    <h3 class="blog-title">Debating Africa's Future at Yale Model African Union</h3>
+                    <p class="blog-excerpt">I had the incredible opportunity to attend the Yale Model African Union Conference in Accra, Ghana — collaborating, debating, and exploring solutions to some of the most pressing challenges facing the African continent.</p>
+                    <div class="blog-full">
+                        <p>As a member of the Peace and Security Council, I engaged in discussions on Chinese and Russian intervention across the African continent, examining the complexities of foreign involvement, economic influence, and national sovereignty. These debates challenged me to think critically about the long-term implications of global partnerships and the importance of balancing development with political and security independence.</p>
+                        <p>What made this even more impactful was the teamwork behind it. Working closely with such driven and thoughtful peers — Deborah Kargbo, Bethlehem Agegne, and Samantha Morinville — made every discussion sharper and every moment more meaningful.</p>
+                        <p>Beyond the conference, being in Accra itself was unforgettable. The city's energy, culture, and growing innovation ecosystem gave real context to the conversations we were having inside the room. This experience deepened my interest in Africa's future and the role young leaders can play in shaping it.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7445092631203700736/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- Apr 2026 — Donors & Scholars -->
+                <article class="blog-card" data-category="leadership">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Leadership</span>
+                        <span class="blog-date">April 2026</span>
+                    </div>
+                    <h3 class="blog-title">Gratitude at the Donors &amp; Scholars Celebration</h3>
+                    <p class="blog-excerpt">Grateful to have attended the Donors &amp; Scholars Celebration at the UNC Kenan-Flagler Undergraduate Business Program.</p>
+                    <div class="blog-full">
+                        <p>It was an incredible experience connecting with the donors, mentors, and fellow students who make opportunities like this possible. Hearing firsthand about the impact of scholarship support and the responsibility that comes with it was both humbling and motivating.</p>
+                        <p>A special thank you to the donors who continue to invest in students like me. Your support goes far beyond financial assistance. It opens doors, builds confidence, and inspires us to lead and give back.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7442555947375452160/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- February 2026 — YMAU announcement -->
+                <article class="blog-card" data-category="global">
+                    <div class="blog-card-top"><span class="blog-tag">Global</span><span class="blog-date">February 2026</span></div>
+                    <h3 class="blog-title">Looking Ahead to Yale Model African Union</h3>
+                    <p class="blog-excerpt">I was excited to share that I would attend Yale Model African Union in Accra to discuss policy, economic development, regional collaboration, and leadership across Africa.</p>
+                    <div class="blog-full"><p>As someone interested in the intersection of business, technology, venture capital, and Africa's future, I looked forward to learning from diverse perspectives and contributing to conversations about the continent's emerging opportunities and complex challenges.</p></div>
+                    <div class="blog-card-actions"><button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button><a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7429917654473334784/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a></div>
+                </article>
+
+                <!-- Feb 2026 — VCIC BYU -->
+                <article class="blog-card" data-category="venture">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Venture Capital</span>
+                        <span class="blog-date">February 2026</span>
+                    </div>
+                    <h3 class="blog-title">VCIC Fellowship at BYU: Venture Simulations in Provo</h3>
+                    <p class="blog-excerpt">Grateful for the opportunity to participate in the VCIC Fellowship hosted at Brigham Young University in Provo, Utah — a day of venture capital simulations, founder evaluations, and investor-style due diligence.</p>
+                    <div class="blog-full">
+                        <p>Spending the day engaging alongside talented students was an incredibly valuable learning experience. The fast-paced nature of the sessions reinforced how important clear thinking, strong questioning, and collaborative decision-making are in early-stage investing.</p>
+                        <p>One of my biggest takeaways was seeing how different teams approached evaluating founders, market opportunities, and business models under time pressure — a reminder that venture capital is as much about judgment and perspective as it is about numbers.</p>
+                        <p>A special thank you to Patrick Vernon for making this trip possible, and to the organizers, judges, founders, and fellow participants who made the experience such a strong learning environment.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7432454375937142785/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- Feb 2026 — VCIC Rice -->
+                <article class="blog-card" data-category="venture">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Venture Capital</span>
+                        <span class="blog-date">February 2026</span>
+                    </div>
+                    <h3 class="blog-title">VCIC South Regional at Rice: How Investors Really Think</h3>
+                    <p class="blog-excerpt">I attended the VCIC South Regional at Rice University as a VCIC Fellow — an incredible experience that pushed my thinking about venture capital, investing, and founder evaluation.</p>
+                    <div class="blog-full">
+                        <p>One of my biggest takeaways was seeing how investors evaluate more than just metrics. Judges repeatedly emphasized that traction without clarity is fragile — strong numbers only matter if they reflect a repeatable and defensible business model. I also appreciated the strong focus on founder mindset, adaptability, and intellectual humility during due diligence conversations.</p>
+                        <p>Another theme that stood out was how venture is evolving. Several judges discussed how traditional SaaS alone is becoming less compelling, with growing interest in startups built around proprietary data, AI integration, or deep industry workflows.</p>
+                        <p>On a personal level, the experience reinforced my long-term interest in venture capital, especially in emerging markets like Africa, where investing requires contextual intelligence, strong judgment, and the ability to evaluate founders operating under real-world constraints.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7427380987698925569/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- Jan 2026 — DaVita offer -->
+                <article class="blog-card" data-category="career">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Career</span>
+                        <span class="blog-date">January 2026</span>
+                    </div>
+                    <h3 class="blog-title">New Year, Big News: Joining DaVita as a Redwoods Summer Analyst</h3>
+                    <p class="blog-excerpt">A couple of weeks ago, I had the opportunity to travel to Denver to explore the beautiful headquarters of DaVita — and I'm excited to share that I'll be joining the team this summer as a Redwoods Summer Analyst.</p>
+                    <div class="blog-full">
+                        <p>That visit made the mission, culture, and impact of DaVita feel very real. I'm incredibly grateful for the opportunity to learn in an environment that values people, data-driven decision-making, and purpose-driven work.</p>
+                        <p>I'm looking forward to developing my analytical skill set, collaborating with talented teammates, and contributing to work that has a tangible impact on patients and communities.</p>
+                        <p>A sincere thank you to Jeremy J. Sanford, Joy Islam, Tricia Andrews, and Matt Hanrahan for your guidance, encouragement, and support throughout the process. Excited for an amazing summer ahead in Denver. ☀️🏔️</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7412492867782430723/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- Dec 2025 — Fall semester recap -->
+                <article class="blog-card" data-category="leadership">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Leadership</span>
+                        <span class="blog-date">December 2025</span>
+                    </div>
+                    <h3 class="blog-title">Fall Semester Reflections &amp; What's Next</h3>
+                    <p class="blog-excerpt">As the semester came to a close, I reflected on how transformative the fall was — from Financial Accounting and Corporate Finance to case competitions and two exciting program acceptances.</p>
+                    <div class="blog-full">
+                        <p>This semester, I dove deep into Financial Accounting, Corporate Finance, Operations Management, and Consulting Skills &amp; Frameworks. Each course pushed me to think more analytically, communicate more clearly, and approach complex problems with structure and rigor.</p>
+                        <p>One highlight was participating in case competitions through Consulting Skills &amp; Frameworks, where applying frameworks in real time made classroom theory feel very real. Huge thanks to Paul Friga for fostering an environment that emphasized clarity of thought, teamwork, and practical impact.</p>
+                        <p>I was also incredibly grateful to be accepted into two experiential programs at UNC Kenan-Flagler: the STAR Program (Student Teams Achieving Results) and the VCIC Fellows Program, offering hands-on exposure to venture capital through immersive travel, live investment discussions, and founder diligence.</p>
+                        <p>Grateful for the mentors, teammates, and challenges that made this semester so meaningful. Excited for what's ahead.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7409956356281192449/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- November 2025 — Zellit team -->
+                <article class="blog-card" data-category="entrepreneurship">
+                    <div class="blog-card-top"><span class="blog-tag">Entrepreneurship</span><span class="blog-date">November 2025</span></div>
+                    <h3 class="blog-title">Building Momentum with the Zellit Team</h3>
+                    <p class="blog-excerpt">I was excited to join a growing team working to turn Zellit's campus marketplace vision into a product students could trust and use.</p>
+                    <div class="blog-full"><p>The milestone reinforced how much early-stage progress depends on the right people, shared belief, and a willingness to keep learning while building.</p></div>
+                    <div class="blog-card-actions"><button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button><a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7388383231617892352/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a></div>
+                </article>
+
+                <!-- Nov 2025 — SAS -->
+                <article class="blog-card" data-category="career">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Career</span>
+                        <span class="blog-date">November 2025</span>
+                    </div>
+                    <h3 class="blog-title">SAS Discovery Day: Data, Analytics &amp; AI</h3>
+                    <p class="blog-excerpt">I had the opportunity to attend SAS Discovery Day at the company's global headquarters in Cary, NC — touring the campus, sitting in on panels, and learning how SAS combines data, analytics, and AI to tackle real-world challenges.</p>
+                    <div class="blog-full">
+                        <p>From seeing their workplace culture firsthand to hearing about their technology's impact across industries, the experience was both eye-opening and inspiring.</p>
+                        <p>One of the highlights was meeting and learning from incredible professionals like Erin Snider, Danielle Pavliv, Mimi Stapleton, and Becky S. Brown, who shared valuable insights about leadership, inclusion, and innovation at SAS.</p>
+                        <p>I also had the chance to connect with fellow students passionate about using data to drive meaningful change — conversations that reminded me why I'm drawn to the intersection of business, technology, and impact.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7394735907461042176/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- Nov 2025 — AfroTech -->
+                <article class="blog-card" data-category="career">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Career</span>
+                        <span class="blog-date">November 2025</span>
+                    </div>
+                    <h3 class="blog-title">AfroTech Houston: Representation in Tech</h3>
+                    <p class="blog-excerpt">I had the incredible opportunity to attend AfroTech in Houston, one of the largest gatherings of Black tech professionals, innovators, and entrepreneurs in the country.</p>
+                    <div class="blog-full">
+                        <p>Being surrounded by thousands of driven, creative, and ambitious individuals who are shaping the future of technology was nothing short of inspiring. From thought-provoking panels to meaningful conversations with founders, recruiters, and engineers, every moment reminded me of the power of representation and community in tech.</p>
+                        <p>I left AfroTech feeling motivated to keep building, learning, and contributing to spaces that empower the next generation of innovators, especially within our communities. This experience reinforced why I'm so passionate about the intersection of business, technology, and impact.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7391877971038375936/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- October 2025 — Zellit pitch -->
+                <article class="blog-card" data-category="entrepreneurship">
+                    <div class="blog-card-top"><span class="blog-tag">Entrepreneurship</span><span class="blog-date">October 2025</span></div>
+                    <h3 class="blog-title">Zellit at the Carolina Pitch Competition</h3>
+                    <p class="blog-excerpt">I took Zellit to my first pitch competition, turning an idea that began as a late-night conversation into something tangible in front of a live audience.</p>
+                    <div class="blog-full"><p>The experience was equal parts nerve-wracking and exciting. I left with new insights, stronger connections, and a clearer vision for helping students buy, sell, and connect more easily on campus. As launch approached, our focus remained on refining the platform, testing features, and building meaningful partnerships.</p></div>
+                    <div class="blog-card-actions"><button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button><a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7389647286383030272/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a></div>
+                </article>
+
+                <!-- Oct 2025 — September recap -->
+                <article class="blog-card" data-category="leadership">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Leadership</span>
+                        <span class="blog-date">October 2025</span>
+                    </div>
+                    <h3 class="blog-title">September Recap: Leadership, Learning &amp; New Partnerships</h3>
+                    <p class="blog-excerpt">I started the month by competing in the Deloitte Case Competition, then hosted a Financial Literacy Lab as VP of the African Students Association — and ASA even landed a partnership with Bumble.</p>
+                    <div class="blog-full">
+                        <p>The Deloitte Case Competition had my team working to solve a complex business problem under tight deadlines. It was an energizing experience that prompted us to think strategically, communicate effectively, and deliver a solution rooted in both data and creativity.</p>
+                        <p>Shortly after, I had the chance to host a Financial Literacy Lab as Vice President of the African Students Association at UNC, in partnership with the Carolina Financial Well-Being Center. We focused on helping students gain practical financial skills — from budgeting to investing — with an emphasis on empowering our community to make confident, informed financial decisions.</p>
+                        <p>Following that event, our organization was approached by Bumble, who partnered with us to promote their new Bumble BFF initiative. Their focus on building meaningful connections aligned perfectly with ASA's mission of creating spaces for authentic friendship and belonging on campus.</p>
+                        <p>September reminded me that leadership happens where learning, collaboration, and opportunity meet — and that every event or challenge can open doors to something even bigger.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7380934903653093376/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- Sep 2025 — ASA Cookout -->
+                <article class="blog-card" data-category="leadership">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Leadership</span>
+                        <span class="blog-date">September 2025</span>
+                    </div>
+                    <h3 class="blog-title">ASA Cookout: Community in Full Color</h3>
+                    <p class="blog-excerpt">As Vice President of the UNC African Students Association, I'm proud of the community we continue to build at UNC. Our annual Cookout brought together students, alumni, and friends to share food, laughter, and culture.</p>
+                    <div class="blog-full">
+                        <p>Big thank you to everyone who came out and made it such a memorable day. The energy said it all — ASA is just getting started this year!</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7373759116378386432/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- Aug 2025 — DaVita Summit -->
+                <article class="blog-card" data-category="career">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Career</span>
+                        <span class="blog-date">August 2025</span>
+                    </div>
+                    <h3 class="blog-title">DaVita Sophomore Leadership Summit</h3>
+                    <p class="blog-excerpt">I had the incredible opportunity to attend the DaVita Kidney Care Sophomore Leadership Summit in Denver — selected from a pool of 250+ applicants to explore my passion for the intersection of business and healthcare.</p>
+                    <div class="blog-full">
+                        <p>The Summit was packed with meaningful conversations, hands-on learning, and a case competition that challenged us to think critically and collaborate effectively. I had the privilege of working with an amazing team — Noah Yu, Nyla Eve Charles, Hannah Hykes, and Catherine Wang — during the case competition. Our teamwork and shared curiosity made the experience all the more rewarding.</p>
+                        <p>A huge thank you to Joy Islam, Jeremy J. Sanford, Jelece Morris, Stonewall Napier III, and all the incredible people at DaVita who made this Summit so impactful. Your commitment to values-driven leadership and patient-centered care left a lasting impression on me.</p>
+                        <p>I'm especially grateful to Management Leadership for Tomorrow for connecting me to this opportunity. I'm walking away more inspired than ever to continue exploring how business can drive innovation and equity in healthcare.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7363177947291140096/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- Aug 2025 — Treasurer wrap-up -->
+                <article class="blog-card" data-category="career">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Career</span>
+                        <span class="blog-date">August 2025</span>
+                    </div>
+                    <h3 class="blog-title">Wrapping Up at the NC Department of State Treasurer</h3>
+                    <p class="blog-excerpt">I completed my summer internship as a Financial Technology Intern at the North Carolina Department of State Treasurer — an enriching, eye-opening look at how technology is transforming public finance.</p>
+                    <div class="blog-full">
+                        <p>Over the course of the internship, I had the opportunity to work on several meaningful projects, including examining financial data to ensure accuracy and compliance across internal systems, assisting in the streamlining of data workflows to improve efficiency and transparency, and exploring digital tools and platforms that support the department's financial operations.</p>
+                        <p>A huge thank you to Brad Briner, Eric Naisbitt, Jennifer Braley, April Parker, and William A. R. Billings for your guidance, mentorship, and support throughout the internship. I'm excited to carry forward everything I've learned as I continue exploring the world of fintech and public service.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7361366010907488256/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- June 2025 — Treasurer internship -->
+                <article class="blog-card" data-category="career">
+                    <div class="blog-card-top"><span class="blog-tag">Career</span><span class="blog-date">June 2025</span></div>
+                    <h3 class="blog-title">Joining the NC Department of State Treasurer</h3>
+                    <p class="blog-excerpt">I began a new role as a Finance Intern with the North Carolina Department of State Treasurer.</p>
+                    <div class="blog-full"><p>The opportunity opened a new chapter at the intersection of finance, technology, and public service—and laid the foundation for a summer of practical learning.</p></div>
+                    <div class="blog-card-actions"><button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button><a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7343045395725316096/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a></div>
+                </article>
+
+                <!-- Jun 2025 — CS acceptance -->
+                <article class="blog-card" data-category="milestones">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Milestones</span>
+                        <span class="blog-date">June 2025</span>
+                    </div>
+                    <h3 class="blog-title">Accepted into Computer Science at UNC</h3>
+                    <p class="blog-excerpt">I was incredibly excited to share that I'd been accepted into the Computer Science major at UNC Chapel Hill — a major step in combining technology and business through a dual path with Kenan-Flagler.</p>
+                    <div class="blog-full">
+                        <p>I'm passionate about exploring where these two worlds intersect: whether it's building data-driven products, driving innovation, or leading in the tech industry with both technical and strategic insight.</p>
+                        <p>Grateful for the opportunities ahead and the amazing community that makes UNC such a special place to grow. Go Heels!</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7336880804247072770/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- May 2025 — Zellit launch story -->
+                <article class="blog-card" data-category="entrepreneurship">
+                    <div class="blog-card-top"><span class="blog-tag">Entrepreneurship</span><span class="blog-date">May 2025</span></div>
+                    <h3 class="blog-title">Introducing Zellit: A Marketplace Built for Students</h3>
+                    <p class="blog-excerpt">What began as a conversation among friends became Zellit, a mobile-first marketplace where verified college students can buy and sell within their campus community.</p>
+                    <div class="blog-full"><p>We wanted to make student resale safer, smarter, and more relevant—without strangers or spam. With .edu verification, campus geofencing, and AI-driven discovery, Zellit was designed around the way students actually connect and transact.</p><p>Launching my first startup venture taught me how an everyday frustration can become a product vision when a team is willing to listen, build, and iterate.</p></div>
+                    <div class="blog-card-actions"><button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button><a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7331657662595510273/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a></div>
+                </article>
+
+                <!-- May 2025 — Redwoods selection -->
+                <article class="blog-card" data-category="career">
+                    <div class="blog-card-top"><span class="blog-tag">Career</span><span class="blog-date">May 2025</span></div>
+                    <h3 class="blog-title">Selected for DaVita's Redwoods Program</h3>
+                    <p class="blog-excerpt">I was selected to join DaVita's Redwoods Leadership Development Program at its Denver headquarters.</p>
+                    <div class="blog-full"><p>The three-day experience offered the chance to strengthen leadership and analytical skills through case challenges, conversations with senior leaders, and connections with Redwoods alumni and an ambitious peer cohort.</p></div>
+                    <div class="blog-card-actions"><button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button><a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7330585627945570306/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a></div>
+                </article>
+
+                <!-- May 2025 — ASA VP -->
+                <article class="blog-card" data-category="leadership">
+                    <div class="blog-card-top"><span class="blog-tag">Leadership</span><span class="blog-date">May 2025</span></div>
+                    <h3 class="blog-title">Becoming Vice President of UNC ASA</h3>
+                    <p class="blog-excerpt">I began a new leadership role as Vice President of the UNC African Students Association.</p>
+                    <div class="blog-full"><p>The role gave me an opportunity to help build community, celebrate African cultures, and create experiences where students could connect and feel a stronger sense of belonging.</p></div>
+                    <div class="blog-card-actions"><button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button><a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7329923690962300928/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a></div>
+                </article>
+
+                <!-- Apr 2025 — Black Innovators Conference -->
+                <article class="blog-card" data-category="leadership">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Leadership</span>
+                        <span class="blog-date">April 2025</span>
+                    </div>
+                    <h3 class="blog-title">Moderating at the Black Innovators Conference</h3>
+                    <p class="blog-excerpt">I was honored to participate in the Black Innovators Conference at UNC Kenan-Flagler, where I moderated the engineering &amp; tech panel exploring the future of technology and strategies for Black professionals to thrive.</p>
+                    <div class="blog-full">
+                        <p>Afterwards, I attended an insightful panel hosted by LaShawnda Rodgers, Najauna White, Sekou Bermiss, and Farad Ali. Key takeaways:</p>
+                        <ul>
+                            <li><strong>Energy &amp; Attitude:</strong> The moment you walk into a room, your focus and mindset set the tone. Be intentional, and doors will open.</li>
+                            <li><strong>Net-worth = Network:</strong> Success isn't just who you know, but the reciprocal value you bring and receive.</li>
+                            <li><strong>Multiple Streams of Impact:</strong> Diversify how you contribute — multiple income streams can translate into multiple paths for positive change.</li>
+                            <li><strong>Lifelong Learning:</strong> Every person you meet is an opportunity to learn, grow, and pay it forward.</li>
+                        </ul>
+                        <p>Thank you to Austin Dumas and the entire MBSA team for organizing such an inspiring event.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7322967940062990336/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- Feb 2025 — Yale Africa Innovation Symposium -->
+                <article class="blog-card" data-category="global">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Global</span>
+                        <span class="blog-date">February 2025</span>
+                    </div>
+                    <h3 class="blog-title">Yale Africa Innovation Symposium</h3>
+                    <p class="blog-excerpt">I attended the Yale Africa Innovation Symposium, a program dedicated to empowering African entrepreneurs who strive to create lasting change, as part of the UNC cohort.</p>
+                    <div class="blog-full">
+                        <p>I was assigned to a case study led by Augustine K. Degorl II, where we tackled the challenge of addressing educational disparities in Uganda. Our task was to design a hypothetical LMS system that could function offline while remaining accessible and equitable.</p>
+                        <p>Working alongside my teammates, I developed a concept centered around computer labs equipped with SIM card-based data storage, enabling users to save their progress seamlessly. Additionally, we proposed a system where hard drives shipped from overseas could be used to upgrade learning units.</p>
+                        <p>After an intense day of problem-solving and collaboration, we celebrated at a gala where King Promise delivered an incredible performance, adding to the unforgettable experience.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7299093838864809984/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- February 2025 — Student Union AV Coordinator -->
+                <article class="blog-card" data-category="career">
+                    <div class="blog-card-top"><span class="blog-tag">Career</span><span class="blog-date">February 2025</span></div>
+                    <h3 class="blog-title">Stepping Up as an Audio Visual Coordinator</h3>
+                    <p class="blog-excerpt">I began a new position as Audio Visual Coordinator at the UNC Student Union.</p>
+                    <div class="blog-full"><p>The role expanded my responsibility for supporting campus events and strengthened the technical, communication, and problem-solving skills I had developed as an AV assistant.</p></div>
+                    <div class="blog-card-actions"><button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button><a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7297355092985274368/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a></div>
+                </article>
+
+                <!-- Dec 2024 — MLT -->
+                <article class="blog-card" data-category="milestones">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Milestones</span>
+                        <span class="blog-date">December 2024</span>
+                    </div>
+                    <h3 class="blog-title">Selected as an MLT Career Prep Fellow</h3>
+                    <p class="blog-excerpt">I was proud to announce my selection as an MLT Career Prep Fellow for the Class of 2027.</p>
+                    <div class="blog-full">
+                        <p>Management Leadership for Tomorrow is a transformative organization dedicated to bridging the critical college-to-career transition gap. By preparing people of color to excel in high-trajectory jobs, MLT not only supports individual success but also creates lasting upward socioeconomic mobility for Fellows, their families, and their communities.</p>
+                        <p>Through this program, I gain personalized coaching, career development resources, and unparalleled access to a powerful network of like-minded peers and industry leaders. I'm eager to use this opportunity to thrive professionally and give back to my community in meaningful ways.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7269342092219363328/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- October 2024 — Kenan-Flagler community -->
+                <article class="blog-card" data-category="milestones">
+                    <div class="blog-card-top"><span class="blog-tag">Milestones</span><span class="blog-date">October 2024</span></div>
+                    <h3 class="blog-title">Proud to Be Part of Kenan-Flagler</h3>
+                    <p class="blog-excerpt">I was grateful to be part of a community recognized among the nation's leading undergraduate business programs.</p>
+                    <div class="blog-full"><p>The recognition reinforced how fortunate I felt to learn alongside ambitious classmates and faculty in a program committed to excellence across finance, management, marketing, and real estate.</p></div>
+                    <div class="blog-card-actions"><button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button><a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7256092478682939393/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a></div>
+                </article>
+
+                <!-- Oct 2024 — Morehead-Cain -->
+                <article class="blog-card" data-category="milestones">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Milestones</span>
+                        <span class="blog-date">October 2024</span>
+                    </div>
+                    <h3 class="blog-title">Morehead-Cain Sophomore Selection Finalist</h3>
+                    <p class="blog-excerpt">Honored to have been a finalist for the Morehead-Cain Foundation Sophomore Selection — a program that identifies UNC sophomores who have demonstrated exceptional scholarship, leadership, and character.</p>
+                    <div class="blog-full">
+                        <p>Grateful for the opportunity to meet such talented peers. A huge thank you to the selection committee, alumni, and the entire Morehead-Cain community for making the experience so meaningful.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7254942873933025281/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- Oct 2024 — Kenan-Flagler acceptance -->
+                <article class="blog-card" data-category="milestones">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Milestones</span>
+                        <span class="blog-date">October 2024</span>
+                    </div>
+                    <h3 class="blog-title">A New Chapter: UNC Kenan-Flagler</h3>
+                    <p class="blog-excerpt">I was thrilled to announce my acceptance into the UNC Kenan-Flagler Business School — the beginning of a new chapter in my academic and professional journey.</p>
+                    <div class="blog-full">
+                        <p>I'm incredibly grateful for the support of my family, friends, professors, and mentors who have been with me every step of the way.</p>
+                        <p>I'm excited to dive into the world of business, expand my knowledge, and continue growing as a leader and entrepreneur. I look forward to all the opportunities and challenges ahead at Kenan-Flagler, and I can't wait to connect with and learn from an amazing community of peers, faculty, and alumni. Let's make things happen! 🚀</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7250977300698009600/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- August 2024 — Office of Management and Budget -->
+                <article class="blog-card" data-category="career">
+                    <div class="blog-card-top"><span class="blog-tag">Career</span><span class="blog-date">August 2024</span></div>
+                    <h3 class="blog-title">Joining UNC's Office of Management and Budget</h3>
+                    <p class="blog-excerpt">I joined the Office of Management and Budget at UNC Chapel Hill as a general staff member.</p>
+                    <div class="blog-full"><p>The position gave me another opportunity to learn how university operations work behind the scenes while contributing to the campus community.</p></div>
+                    <div class="blog-card-actions"><button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button><a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7231148747219501056/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a></div>
+                </article>
+
+                <!-- August 2024 — Student Union AV -->
+                <article class="blog-card" data-category="career">
+                    <div class="blog-card-top"><span class="blog-tag">Career</span><span class="blog-date">August 2024</span></div>
+                    <h3 class="blog-title">Starting as an Audio-Visual Assistant</h3>
+                    <p class="blog-excerpt">I began a new role as an Audio-Visual Assistant at the UNC Student Union.</p>
+                    <div class="blog-full"><p>The role combined hands-on technology with service, teamwork, and the challenge of helping campus events run smoothly.</p></div>
+                    <div class="blog-card-actions"><button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button><a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7229851891868872704/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a></div>
+                </article>
+
+                <!-- Aug 2024 — Apollo Designs -->
+                <article class="blog-card" data-category="career">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Career</span>
+                        <span class="blog-date">August 2024</span>
+                    </div>
+                    <h3 class="blog-title">Summer at Apollo Designs</h3>
+                    <p class="blog-excerpt">This summer, I had the incredible opportunity to work alongside my friends Ruhan Upadhyaya and Kulp Vyas at Apollo Designs, an FF&amp;E procurement company — an eye-opening dive into sales and business operations.</p>
+                    <div class="blog-full">
+                        <p>Working at Apollo Designs taught us invaluable skills in sales strategies, client communication, and project management. We had the chance to engage directly with clients and understand their needs. The hands-on experience allowed us to see firsthand how the procurement process works, from initial contact to final delivery.</p>
+                        <p>I'm grateful for the mentorship and support we received from the Apollo Designs team. Their guidance and expertise were instrumental in helping us grow professionally and personally. This experience solidified my interest in the industry and provided me with a strong foundation for future endeavors.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7226557681887555584/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- July 2024 — Apollo internship announcement -->
+                <article class="blog-card" data-category="career">
+                    <div class="blog-card-top"><span class="blog-tag">Career</span><span class="blog-date">July 2024</span></div>
+                    <h3 class="blog-title">Beginning My Internship at Apollo Design</h3>
+                    <p class="blog-excerpt">I was excited to begin a new internship with Apollo Design.</p>
+                    <div class="blog-full"><p>The opportunity became an early step in exploring sales, business operations, and the relationships that keep a growing company moving.</p></div>
+                    <div class="blog-card-actions"><button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button><a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7221586608796381184/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a></div>
+                </article>
+
+                <!-- Jul 2024 — Green Clean -->
+                <article class="blog-card" data-category="entrepreneurship">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Entrepreneurship</span>
+                        <span class="blog-date">July 2024</span>
+                    </div>
+                    <h3 class="blog-title">Etornam's Green Clean: A Summer of Hustle</h3>
+                    <p class="blog-excerpt">My brother and I embarked on a rewarding journey with our venture, Etornam's Green Clean — providing eco-friendly residential and commercial power washing services in High Point, NC.</p>
+                    <div class="blog-full">
+                        <p>Together we specialized in driveway and sidewalk cleaning and deck and patio washing. Our commitment to using sustainable products and techniques ensured that we delivered exceptional service while being kind to the environment.</p>
+                        <p>We took pride in paying attention to detail and guaranteeing customer satisfaction with every project. Looking forward to continuing this green journey and making a positive impact in our community. 🌿</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                        <a class="blog-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7222251727100506113/" target="_blank" rel="noopener">View on LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+
+                <!-- Jul 2022 — Cisco Shadow -->
+                <article class="blog-card" data-category="career">
+                    <div class="blog-card-top">
+                        <span class="blog-tag">Career</span>
+                        <span class="blog-date">July 2022</span>
+                    </div>
+                    <h3 class="blog-title">Where It Started: Cisco's HS Shadow Program</h3>
+                    <p class="blog-excerpt">I just finished my second week of Cisco's HS Shadow Program — an experience that exposed me to so many different fields for the first time.</p>
+                    <div class="blog-full">
+                        <p>HR was one of the fields that I thought was just managing office complaints (thanks, Toby Flenderson) until Greg Tesimale showed us how important the role is in his wonderful presentation.</p>
+                        <p>My favorite presentation of the week was DivyaJyoti Ravdev's presentation on Data Science — a field I had never given a single thought to, but after her presentation, I found myself researching the role and finding out how I could become one.</p>
+                        <p>Thank you to all the amazing organizers of the Cisco HS Shadow Program. Your work is truly amazing and life-changing.</p>
+                    </div>
+                    <div class="blog-card-actions">
+                        <button class="read-more-btn" onclick="toggleBlogPost(this)">Read more</button>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-content">
+                <blockquote class="quote">
+                    "Progress often comes from simply taking the next intentional step, even without the full picture."
+                </blockquote>
+                <cite class="quote-author">- Etornam Agbemabiese</cite>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2026 Etornam Agbemabiese. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="education.html">Education</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
